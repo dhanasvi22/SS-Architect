@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery Showcase</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="./garden.css"> -->
+  <style>
+    /* Extra gallery-specific styling */
+    .gallery-container {
+      width: 90%;
+      max-width: 1300px;
+      margin: 50px auto;
+      text-align: center;
+    }
+    .gallery-container h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #fff;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .image-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+    .image-grid img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>SS Architect</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="interior.html">Interior</a></li>
+          <li><a href="exterior.html">Exterior</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="virtual-tour.html">Virtual Tour</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="theme.html">Theme</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ <!-- HERO SECTION -->
+    <section class="hero" style="background-image: url('./blog.jpg');">
+        <h2>Design Your Dream Balcony</h2>
+        <p>Explore interior & exterior designs, gallery, services, and more!</p>
+    </section>
+    
+  <!-- Gallery Section -->
+  <section class="gallery-container">
+    <!-- <h2>Our Stunning Gallery</h2> -->
+    <div class="image-grid">
+      <!-- Replace with your actual images -->
+      <img src="./image.png" alt="Gallery Image 1">
+      <img src="https://picsum.photos/300/200?random=2" alt="Gallery Image 2">
+      <img src="https://picsum.photos/300/200?random=3" alt="Gallery Image 3">
+      <img src="https://picsum.photos/300/200?random=4" alt="Gallery Image 4">
+      <img src="https://picsum.photos/300/200?random=5" alt="Gallery Image 5">
+      <img src="https://picsum.photos/300/200?random=6" alt="Gallery Image 6">
+      <img src="https://picsum.photos/300/200?random=7" alt="Gallery Image 7">
+      <img src="https://picsum.photos/300/200?random=8" alt="Gallery Image 8">
+      <img src="https://picsum.photos/300/200?random=9" alt="Gallery Image 9">
+      <img src="https://picsum.photos/300/200?random=10" alt="Gallery Image 10">
+      <img src="https://picsum.photos/300/200?random=11" alt="Gallery Image 11">
+      <img src="https://picsum.photos/300/200?random=12" alt="Gallery Image 12">
+      <img src="https://picsum.photos/300/200?random=13" alt="Gallery Image 13">
+      <img src="https://picsum.photos/300/200?random=14" alt="Gallery Image 14">
+      <img src="https://picsum.photos/300/200?random=15" alt="Gallery Image 15">
+      <img src="https://picsum.photos/300/200?random=16" alt="Gallery Image 16">
+      <img src="https://picsum.photos/300/200?random=17" alt="Gallery Image 17">
+      <img src="https://picsum.photos/300/200?random=18" alt="Gallery Image 18">
+      <img src="https://picsum.photos/300/200?random=19" alt="Gallery Image 19">
+      <img src="https://picsum.photos/300/200?random=20" alt="Gallery Image 20">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Design World. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
