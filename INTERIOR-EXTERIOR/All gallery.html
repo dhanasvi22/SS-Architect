@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery Showcase</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="./garden.css"> -->
+  <style>
+    /* Extra gallery-specific styling */
+    .gallery-container {
+      width: 90%;
+      max-width: 1300px;
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    .gallery-container h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #fff;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .image-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+
+    .image-grid img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    }
+
+    .p {
+      align-items: center;
+      justify-content: center;
+      margin-left: 47%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>SS Architect</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="interior.html">Interior</a></li>
+          <li><a href="exterior.html">Exterior</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="./testimoals.html">Testimonials</a></li>
+          <li><a href="virtual-tour.html">Virtual Tour</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="theme.html">Theme</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- HERO SECTION -->
+  <section class="hero" style="background-image: url('./g\ img\ 12.jpg');">
+    <h2>Desigen Showcase</h2>
+    <p> From Concept to reality - a glimpse into our architectural journey</p>
+  </section>
+
+  <!-- Gallery Section -->
+  <div class="p">
+    <h3>Interior Exterior</h3>
+  </div>
+  <section class="gallery-container">
+    <!-- <h2>Our Stunning Gallery</h2> -->
+    <div class="image-grid">
+      <!-- Replace with your actual images -->
+      <img src="./ba 16.jpg" alt="Gallery Image 1">
+      <img src="./e ba 3.jpg" alt="Gallery Image 2">
+      <img src="./ba 15.jpg" alt="Gallery Image 3">
+      <img src="./e ba 5.jpg" alt="Gallery Image 4">
+      <img src="./k ba 1.jpg" alt="Gallery Image 5">
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <div class="p">
+    <h3>Garden</h3>
+  </div>
+  <section class="gallery-container">
+    <!-- <h2>Our Stunning Gallery</h2> -->
+    <div class="image-grid">
+      <img src="./g ba1.jpg" alt="Gallery Image 6">
+      <img src="./g ba 2.jpg" alt="Gallery Image 7">
+      <img src="./gba3.jpg" alt="Gallery Image 8">
+      <img src="./g ba1.jpg" alt="Gallery Image 9">
+      <img src="./gba5.jpg" alt="Gallery Image 10">
+    </div>
+  </section>
+  <!-- Gallery Section -->
+  <div class="p">
+    <h3>Kitchen</h3>
+  </div>
+  <section class="gallery-container">
+    <!-- <h2>Our Stunning Gallery</h2> -->
+
+    <div class="image-grid">
+
+      <img src="./k ba 1.jpg" alt="Gallery Image 11">
+      <img src="./ba12.jpg" alt="Gallery Image 12">
+      <img src="./kba5.jpg" alt="Gallery Image 13">
+      <img src="./k ba 1.jpg" alt="Gallery Image 14">
+      <img src="./ba13.jpg" alt="Gallery Image 15">
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <div class="p">
+    <h3>Exterior</h3>
+  </div>
+  <section class="gallery-container">
+    <!-- <h2>Our Stunning Gallery</h2> -->
+
+    <div class="image-grid">
+
+      <img src="./e ba 2.jpg" alt="Gallery Image 11">
+      <img src="./e ba 3.jpg" alt="Gallery Image 12">
+      <img src="./e ba 4.jpg" alt="Gallery Image 13">
+      <img src="./e ba 5.jpg" alt="Gallery Image 14">
+      <img src="./e ba1.jpg" alt="Gallery Image 15">
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SS Architect. All Rights Reserved.</p>
+  </footer>
+
+</body>
+
+</html>

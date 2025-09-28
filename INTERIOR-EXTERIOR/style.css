@@ -63,6 +63,10 @@ header nav ul li a:hover {
 
 /* HERO SECTIONS */
 .hero {
+     background-repeat: no-repeat;   /* image repeat na ho */
+     background-size: cover;         /* pura section cover kare */
+     background-position: center;    /* image ko center me set kare */
+     height: 100vh;                  /* hero section ki height */
     position: relative;
     height: 450px;
     display: flex;

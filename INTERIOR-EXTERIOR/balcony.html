@@ -36,6 +36,80 @@
       transform: scale(1.08);
       box-shadow: 0 10px 25px rgba(0,0,0,0.35);
     }
+
+
+/* ===== CAROUSEL CONTAINER ===== */
+.carousel {
+    width: 90%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    background: #ffffff;
+}
+
+/* ===== CAROUSEL TRACK ===== */
+.carousel-track {
+    display: flex;
+    width: 400%; /* 4 slides */
+    animation: slide 12s infinite;
+}
+
+/* ===== CAROUSEL SLIDES ===== */
+.carousel-slide {
+    width: 100%;
+    flex-shrink: 0;
+    padding: 10px;
+    display: flex;
+    flex: 0 0 25%;
+}
+.carousel-slide img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 15s, box-shadow 15s;
+    height: 500px;
+  
+}
+.carousel-slide img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px; /* fixed uniform height */
+}
+
+.carousel-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* keeps aspect ratio, no stretching */
+}
+.carousel-track {
+    display: flex;
+    width: 400%; /* number of slides */
+    animation: slide 100s infinite; /* increase from 12s to 24s for slower sliding */
+}
+
+/* ===== KEYFRAMES ===== */
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    20% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+    100% { transform: translateX(0%); }
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    .carousel { width: 95%; }
+}
+
   </style>
 </head>
 <body>
@@ -51,7 +125,7 @@
           <li><a href="exterior.html">Exterior</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="testimoals.html">Testimonials</a></li>
           <li><a href="virtual-tour.html">Virtual Tour</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="theme.html">Theme</a></li>
@@ -65,6 +139,25 @@
         <h2>Design Your Dream Balcony</h2>
         <p>Explore interior & exterior designs, gallery, services, and more!</p>
     </section>
+
+    <!-- corsol -->
+     <div class="carousel">
+    <div class="carousel-track">
+        <div class="carousel-slide"><img src="./g img 20.jpg" alt="Balcony 1"></div>
+        <div class="carousel-slide"><img src="./e ba 4.jpg" alt="Balcony 2"></div>
+        <div class="carousel-slide"><img src="./image.png" alt="Terrace 1"></div>
+        <div class="carousel-slide"><img src="./ba 15.jpg" alt="Terrace 2"></div>
+         <div class="carousel-slide"><img src="./g img 20.jpg" alt="Balcony 1"></div>
+        <div class="carousel-slide"><img src="./e ba 4.jpg" alt="Balcony 2"></div>
+        <div class="carousel-slide"><img src="./image.png" alt="Terrace 1"></div>
+        <div class="carousel-slide"><img src="./ba 15.jpg" alt="Terrace 2"></div>
+         <div class="carousel-slide"><img src="./g img 20.jpg" alt="Balcony 1"></div>
+        <div class="carousel-slide"><img src="./e ba 4.jpg" alt="Balcony 2"></div>
+        <div class="carousel-slide"><img src="./image.png" alt="Terrace 1"></div>
+        <div class="carousel-slide"><img src="./ba 15.jpg" alt="Terrace 2"></div>
+    </div>
+</div>
+
     
   <!-- Gallery Section -->
   <section class="gallery-container">
@@ -96,7 +189,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Design World. All Rights Reserved.</p>
+    <p>&copy; 2025 SS Architect. All Rights Reserved.</p>
   </footer>
 
 </body>
