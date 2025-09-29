@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery Showcase</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Extra gallery-specific styling */
+    .gallery-container {
+      width: 90%;
+      max-width: 1300px;
+      margin: 50px auto;
+      text-align: center;
+    }
+    .gallery-container h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: black;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .image-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+    .image-grid img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>SS architect</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="interior.html">Interior</a></li>
+          <li><a href="exterior.html">Exterior</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="virtual-tour.html">Virtual Tour</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="theme.html">Theme</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Gallery Section -->
+  <section class="hero" style="background-image: (./img1.jpg);">
+    <h2>Garden / Landscape</h2>
+    <p> From Concept to reality - a glimpse into our architectural journey</p>
+  </section> 
+    <div class="image-grid">
+      <!-- Replace with your actual images -->
+      <img src="https://i.pinimg.com/736x/68/41/50/684150ba3fb6b491062f5f88e714125a.jpg" alt="Gallery Image 1">
+      <img src="https://i.pinimg.com/736x/ca/39/15/ca39155ef2158ef3742ae1dbbed9fe28.jpg" alt="Gallery Image 2">
+      <img src="https://i.pinimg.com/736x/98/0f/1e/980f1ea503a13b8bea4f22ca38a79700.jpg" alt="Gallery Image 3">
+      <img src="https://i.pinimg.com/736x/d2/a7/16/d2a7169f183a67badb63b3ba0fee22a2.jpg" alt="Gallery Image 4">
+      <img src="https://i.pinimg.com/736x/66/a0/e5/66a0e592edfa32900f13bc7aaa69f3e1.jpg" alt="Gallery Image 5">
+      <img src="https://i.pinimg.com/736x/51/07/d3/5107d39801ff468906e63f5d9445b690.jpg" alt="Gallery Image 6">
+      <img src="https://i.pinimg.com/736x/71/83/9b/71839b2ef7a5a08abe8008aaf21f29ea.jpg" alt="Gallery Image 7">
+      <img src="https://i.pinimg.com/736x/87/d8/97/87d8976c4020410a41c3ce50cf82c437.jpg" alt="Gallery Image 8">
+      <img src="https://i.pinimg.com/736x/e5/79/2c/e5792cfe6db8ed528e0aa1e8b5f77863.jpg" alt="Gallery Image 9">
+      <img src="https://i.pinimg.com/1200x/6a/37/f6/6a37f6e90e91ee50590727ab44611325.jpg" alt="Gallery Image 10">
+      <img src="https://i.pinimg.com/736x/77/6e/72/776e72dc70985350df4bd49535362348.jpg" alt="Gallery Image 11">
+      <img src="https://i.pinimg.com/1200x/21/d1/43/21d143b73ec98ef5c2a7d59c667cfff6.jpg" alt="Gallery Image 12">
+      <img src="https://i.pinimg.com/736x/d1/8e/47/d18e47d4da88d5c241708871db9cbe22.jpg" alt="Gallery Image 13">
+      <img src="https://i.pinimg.com/736x/c9/9e/06/c99e06cc0a4081ea1db6699d305cbda2.jpg" alt="Gallery Image 14">
+      <img src="https://i.pinimg.com/736x/be/86/91/be86914e8c82b949d05bd405805e66e4.jpg" alt="Gallery Image 15">
+      <img src="https://i.pinimg.com/1200x/db/80/f6/db80f6ed6ee73b9f1924e741b1a1227a.jpg" alt="Gallery Image 16">
+      <img src="https://i.pinimg.com/736x/f6/96/3f/f6963ff498ff4ceab216209e7f18801a.jpg" alt="Gallery Image 17">
+      <img src="https://i.pinimg.com/736x/d0/bb/d5/d0bbd50172c310f4306fc641df44f351.jpg" alt="Gallery Image 18">
+      <img src="https://i.pinimg.com/736x/ed/24/fd/ed24fd245bedd5a0cd56d56454733b76.jpg" alt="Gallery Image 19">
+      <img src="https://i.pinimg.com/736x/ff/20/74/ff2074e893c51fd311da011fd166332d.jpg" alt="Gallery Image 20">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SS Architect. All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
