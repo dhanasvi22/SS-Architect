@@ -1,45 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonials</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Testimonials Section */
+    .testimonial-section {
+      width: 90%;
+      max-width: 1200px;
+      margin: 50px auto;
+      text-align: center;
+    }
+    .testimonial-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #000000;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .testimonial-card {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 25px;
+      color: #000000;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: left;
+      position: relative;
+    }
+    .testimonial-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    }
+
+    .testimonial-card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .testimonial-author img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+
+    .testimonial-author h4 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .testimonial-author span {
+      font-size: 0.85rem;
+      color: #ffcc66;
+    }
+
+    /* Star Rating */
+    .stars {
+      margin-top: 10px;
+    }
+    .stars span {
+      color: gold;
+      font-size: 1.1rem;
+    }
+  </style>
 </head>
 <body>
-<header>
+
+  <!-- Header -->
+  <header>
     <div class="container">
-        <h1>Dream Spaces</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="interior.html">Interior</a></li>
-                <li><a href="exterior.html">Exterior</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="virtual-tour.html">Virtual Tour</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="theme.html">Theme</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <h1>Design World</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="interior.html">Interior</a></li>
+          <li><a href="exterior.html">Exterior</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="virtual-tour.html">Virtual Tour</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="theme.html">Theme</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-</header>
+  </header>
 
-<section class="hero" style="background-image: url('testimonials.jpg');">
-    <h2>Testimonials</h2>
-    <p>What our clients say about us</p>
-</section>
+  <!-- Testimonials Section -->
+  <section class="testimonial-section">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-grid">
 
-<section class="cards container">
-    <div class="glass-card">"Amazing interior design services!" – Client A</div>
-    <div class="glass-card">"Our garden looks fantastic!" – Client B</div>
-    <div class="glass-card">"Professional & creative team." – Client C</div>
-</section>
+      <!-- Card 1 -->
+      <div class="testimonial-card">
+        <p>"The interior design completely transformed my living room. The modern touch with traditional vibes is stunning!"</p>
+        <div class="testimonial-author">
+          <img src="WhatsApp Image 2025-09-29 at 17.56.45_65ced94b.jpg" alt="Client 1">
+          <div>
+            <h4>Vaidehi Bankar</h4>
+            <span>⭐ Interior Client</span>
+          </div>
+        </div>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
 
-<footer>
-    <p>&copy; 2025 Dream Spaces. All Rights Reserved.</p>
-</footer>
+      <!-- Card 2 -->
+      <div class="testimonial-card">
+        <p>"Professional team with innovative design ideas. They exceeded my expectations for my office workspace."</p>
+        <div class="testimonial-author">
+          <img src="https://i.pravatar.cc/100?img=2" alt="Client 2">
+          <div>
+            <h4>Aman Verma</h4>
+            <span>⭐ Office Renovation</span>
+          </div>
+        </div>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="testimonial-card">
+        <p>"The before-after exterior wall transformation was unbelievable. Highly recommended!"</p>
+        <div class="testimonial-author">
+          <img src="https://i.pravatar.cc/100?img=3" alt="Client 3">
+          <div>
+            <h4>Priya Nair</h4>
+            <span>⭐ Exterior Design</span>
+          </div>
+        </div>
+        <div class="stars">⭐⭐⭐⭐</div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="testimonial-card">
+        <p>"From consultation to execution, everything was smooth and transparent. Loved the final result!"</p>
+        <div class="testimonial-author">
+          <img src="https://i.pravatar.cc/100?img=4" alt="Client 4">
+          <div>
+            <h4>Karan Singh</h4>
+            <span>⭐ Consultation</span>
+          </div>
+        </div>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="testimonial-card">
+        <p>"The cost estimator mock gave me clarity on my budget. The pricing table was very helpful."</p>
+        <div class="testimonial-author">
+          <img src="https://i.pravatar.cc/100?img=5" alt="Client 5">
+          <div>
+            <h4>Sneha Kapoor</h4>
+            <span>⭐ Services</span>
+          </div>
+        </div>
+        <div class="stars">⭐⭐⭐⭐</div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="testimonial-card">
+        <p>"I loved the 3D room mock-up. It made visualizing my new bedroom design so easy!"</p>
+        <div class="testimonial-author">
+          <img src="https://i.pravatar.cc/100?img=6" alt="Client 6">
+          <div>
+            <h4>Aditya Mehta</h4>
+            <span>⭐ Bedroom Design</span>
+          </div>
+        </div>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="testimonial-card">
+        <p>"Creative use of space and wonderful furniture customization. The team is very talented."</p>
+        <div class="testimonial-author">
+          <img src="https://i.pravatar.cc/100?img=7" alt="Client 7">
+          <div>
+            <h4>Neha Joshi</h4>
+            <span>⭐ Furniture Design</span>
+          </div>
+        </div>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="testimonial-card">
+        <p>"Balcony makeover was beyond my imagination. The parallax garden view is so refreshing now!"</p>
+        <div class="testimonial-author">
+          <img src="https://i.pravatar.cc/100?img=8" alt="Client 8">
+          <div>
+            <h4>Rohit Malhotra</h4>
+            <span>⭐ Exterior Balcony</span>
+          </div>
+        </div>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Design World. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>
+
