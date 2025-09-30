@@ -3,37 +3,185 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interior Design Blog - B&W</title>
-  <link rel="stylesheet" href="blog.css">
+  <title>Interior Design Blog</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
+      color: #000000;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 50px 20px 30px;
+    }
+
+    .blog-title {
+      font-size: 2.8rem;
+      color: #000000;
+      margin: 0;
+    }
+
+    .blog-subtitle {
+      font-size: 1.2rem;
+      color: #000000;
+      margin-top: 10px;
+    }
+
+    /* Blog Container */
+    .blog-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px 60px;
+    }
+
+    /* Blog Card */
+    .blog-card {
+      background: #000000;
+      color: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .blog-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .blog-card h3 {
+      margin: 15px;
+      font-size: 1.3rem;
+    }
+
+    .blog-card p {
+      margin: 0 15px 15px;
+      font-size: 0.95rem;
+      color: #ffffff;
+    }
+
+    .blog-card a {
+      display: inline-block;
+      margin: 0 15px 20px;
+      padding: 10px 16px;
+      color: #ffffff;
+      font-weight: bold;
+      text-decoration: none;
+      border: 1px solid #111;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .blog-card a:hover {
+      background: #ffffff;
+      color: #000000;
+      border-color: #fff;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1 class="blog-title">🏠 Interior Design Tips</h1>
-    <p class="blog-subtitle">Clean, modern ideas for stylish interiors.</p>
+    <p class="blog-subtitle">Explore ideas for modern living spaces.</p>
   </header>
 
   <main>
     <section class="blog-container">
       <div class="blog-card">
-        <img src="https://source.unsplash.com/400x250/?livingroom,interior" alt="Living Room">
+        <img src="https://i.pinimg.com/1200x/9a/20/f1/9a20f181b156be7d6d6341c6bf4024ea.jpg" alt="Living Room">
         <h3>Living Room Inspiration</h3>
-        <p>Modern layouts and cozy seating for your living spaces.</p>
+        <p>Stylish layouts and décor ideas for cozy living rooms.</p>
         <a href="#">Read More →</a>
       </div>
 
       <div class="blog-card">
-        <img src="https://source.unsplash.com/400x250/?bedroom,interior" alt="Bedroom">
-        <h3>Bedroom Retreats</h3>
-        <p>Create a peaceful atmosphere with minimalistic designs.</p>
+        <img src="https://i.pinimg.com/736x/4a/70/f4/4a70f405a23e39c21903499e2f00a47e.jpg" alt="Bedroom">
+        <h3>Bedroom Designs</h3>
+        <p>Create the perfect restful retreat with modern interiors.</p>
         <a href="#">Read More →</a>
       </div>
 
       <div class="blog-card">
-        <img src="https://source.unsplash.com/400x250/?kitchen,interior" alt="Kitchen">
+        <img src="https://i.pinimg.com/1200x/2f/51/86/2f51861a10cc71295ba5963d681d62a5.jpg" alt="Kitchen">
         <h3>Kitchen Styling</h3>
-        <p>Elegant, practical kitchen designs with monochrome tones.</p>
+        <p>Smart layouts and minimalistic designs for practical spaces.</p>
         <a href="#">Read More →</a>
       </div>
+
+      <div class="blog-card">
+        <img src="https://i.pinimg.com/736x/e9/17/b5/e917b5fa1fa4466ddd3756a3277513b5.jpg" alt="Kitchen">
+        <h3>Furniture</h3>
+        <p>Smart layouts and minimalistic designs for practical spaces.</p>
+        <a href="#">Read More →</a>
+      </div>
+
+      <div class="blog-card">
+        <img src="https://i.pinimg.com/736x/ac/ea/b2/aceab23a66e438a747fc57fa8bd69436.jpg" alt="Kitchen">
+        <h3>Wooden BookShelf</h3>
+        <p>Smart layouts and minimalistic designs for practical spaces.</p>
+        <a href="#">Read More →</a>
+      </div>
+
+
+
+      <div class="blog-card">
+        <img src="https://i.pinimg.com/736x/5b/68/51/5b6851cb57acfee9ba8c82987c9d04ee.jpg" alt="Kitchen">
+        <h3>Modern Bed</h3>
+        <p>Smart layouts and minimalistic designs for practical spaces.</p>
+        <a href="#">Read More →</a>
+      </div>
+
+
+      <div class="blog-card">
+        <img src="https://i.pinimg.com/1200x/8d/dc/7f/8ddc7f83e6439657ec16cd5f4b7bdb25.jpg" alt="Kitchen">
+        <h3>Stylish Stairs</h3>
+        <p>Smart layouts and minimalistic designs for practical spaces.</p>
+        <a href="#">Read More →</a>
+      </div>
+
+
+      <div class="blog-card">
+        <img src="https://i.pinimg.com/1200x/3a/90/69/3a9069b94a105fe1f92241f8a948b0e2.jpg" alt="Kitchen">
+        <h3>Marble Floor</h3>
+        <p>Smart layouts and minimalistic designs for practical spaces.</p>
+        <a href="#">Read More →</a>
+      </div>
+
+
+      <div class="blog-card">
+        <img src="https://i.pinimg.com/736x/06/43/28/0643289c12c5c7371cb53717aea2d054.jpg" alt="Kitchen">
+        <h3>Kids Room</h3>
+        <p>Smart layouts and minimalistic designs for practical spaces.</p>
+        <a href="#">Read More →</a>
+      </div>
+
+
+
+      <div class="blog-card">
+        <img src="https://i.pinimg.com/736x/af/fc/be/affcbed7b738c22560dc41fd3c9aac68.jpg" alt="Kitchen">
+        <h3>Coustomize Kids Bed</h3>
+        <p>Smart layouts and minimalistic designs for practical spaces.</p>
+        <a href="#">Read More →</a>
+      </div>
+
+
     </section>
   </main>
 </body>
