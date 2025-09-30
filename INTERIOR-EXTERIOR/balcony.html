@@ -36,94 +36,7 @@
       transform: scale(1.08);
       box-shadow: 0 10px 25px rgba(0,0,0,0.35);
     }
-    .carousel {
-  width: 80%;
-  max-width: 900px;
-  margin: auto;
-  overflow: hidden;
-  border-radius: 15px;
-  background-color: #f5f5f5; /* light white background */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
-}
-
-.slides {
-  display: flex;
-  width: 2000%; /* 20 images * 100% each */
-  animation: slide 50s infinite; /* total 200s for all images */
-}
-
-.slides img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 15px;
-}
-
-/* Step-wise Animation for 20 images */
-@keyframes slide {
-  0%   { transform: translateX(0); }
-  4.75% { transform: translateX(0); }   /* pause on 1st */
-
-  5%   { transform: translateX(-5%); }
-  9.75% { transform: translateX(-5%); }  /* pause on 2nd */
-
-  10%  { transform: translateX(-10%); }
-  14.75%{ transform: translateX(-10%); }
-
-  15%  { transform: translateX(-15%); }
-  19.75%{ transform: translateX(-15%); }
-
-  20%  { transform: translateX(-20%); }
-  24.75%{ transform: translateX(-20%); }
-
-  25%  { transform: translateX(-25%); }
-  29.75%{ transform: translateX(-25%); }
-
-  30%  { transform: translateX(-30%); }
-  34.75%{ transform: translateX(-30%); }
-
-  35%  { transform: translateX(-35%); }
-  39.75%{ transform: translateX(-35%); }
-
-  40%  { transform: translateX(-40%); }
-  44.75%{ transform: translateX(-40%); }
-
-  45%  { transform: translateX(-45%); }
-  49.75%{ transform: translateX(-45%); }
-
-  50%  { transform: translateX(-50%); }
-  54.75%{ transform: translateX(-50%); }
-
-  55%  { transform: translateX(-55%); }
-  59.75%{ transform: translateX(-55%); }
-
-  60%  { transform: translateX(-60%); }
-  64.75%{ transform: translateX(-60%); }
-
-  65%  { transform: translateX(-65%); }
-  69.75%{ transform: translateX(-65%); }
-
-  70%  { transform: translateX(-70%); }
-  74.75%{ transform: translateX(-70%); }
-
-  75%  { transform: translateX(-75%); }
-  79.75%{ transform: translateX(-75%); }
-
-  80%  { transform: translateX(-80%); }
-  84.75%{ transform: translateX(-80%); }
-
-  85%  { transform: translateX(-85%); }
-  89.75%{ transform: translateX(-85%); }
-
-  90%  { transform: translateX(-90%); }
-  94.75%{ transform: translateX(-90%); }
-
-  95%  { transform: translateX(-95%); }
-  99.75%{ transform: translateX(-95%); }
-
-  100% { transform: translateX(0); } /* loop back */
-}
-
+    
   </style>
 </head>
 <body>
@@ -148,7 +61,7 @@
     </div>
   </header>
  <!-- HERO SECTION -->
-    <section class="hero" style="background-image: url('./blog.jpg');">
+    <section class="hero" style="background-image: url(./k\ 3d5.jpg);">
         <h2>Creative Space</h2>
         <p>Discover the art of Design in our gallary</p>
     </section>
@@ -156,33 +69,16 @@
 <section class="gallery-container">
   <h2>Our Stunning Gallery</h2>
 
-  <div class="carousel">
-    <div class="slides">
-      <img src="./3d e5.jpg" alt="Gallery Image 1">
-      <img src="./g img 14.jpg" alt="Gallery Image 2">
-      <img src="./g img 15.jpg" alt="Gallery Image 3">
-      <img src="3d e1.jpg" alt="Gallery Image 4">
-      <img src="k 3d 2.jpg" alt="Gallery Image 5">
-      <img src="./k 3d1.jpg" alt="Gallery Image 6">
-      <img src="./g img 10.jpg" alt="Gallery Image 7">
-      <img src="./g img 16.jpg" alt="Gallery Image 8">
+<!-- marquee tag -->
+
+<marquee behavior="alternate" direction="right">
       <img src="./g img 9.jpg" alt="Gallery Image 9">
-      <img src="./k 3d5.jpg" alt="Gallery Image 10">
       <img src="./3d e3.jpg" alt="Gallery Image 11">
       <img src="./b 3d.jpg" alt="Gallery Image 12">
       <img src="./l 3d2.jpg" alt="Gallery Image 13">
       <img src="./g img 14.jpg" alt="Gallery Image 14">
-      <img src="./b3d5.jpg" alt="Gallery Image 15">
-      <img src="./3d e5.jpg" alt="Gallery Image 16">
-      <img src="./b3d4.jpg" alt="Gallery Image 17">
-      <img src="./k 3d 3.jpg" alt="Gallery Image 18">
-      <img src="./g img 2.jpg" alt="Gallery Image 19">
-      <img src="./g img 15.jpg" alt="Gallery Image 20">
-    </div>
-  </div>
-</section>
+</marquee>
 
-    
   <!-- Gallery Section -->
   <section class="gallery-container">
     <!-- <h2>Our Stunning Gallery</h2> -->
